@@ -1,1 +1,115 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <header>
+       <title>Shackes Smash</title>
+       <meta charset="utf-8"/>
+   </header>
+   <body>
+        <section id="Välkommen till Shackes">
+            <h1>Schackes Burger - När du känner för en äkta SMASH</h1>
+        </section>
+        <h2>Vår smashiga meny! Shacke approved</h2> <!-- Meny -->
+        <p>Välkommen att testa vår bästsäljare: TurboSmash! som vunnit alla priser på internationella SMASHburgar-tävlingar.</p>
+        <div style="display: inline-block">
+                <h3>Big Smash 750g</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-affNy77jhQ_LSWm3W37pw-5t3ruXDd1YyNaJ1_j3bQ&s=10" alt="Big Smash 750g" style="width: 200px">
+                <ul>
+                    <li>750g extraSMASHAT kött</li>
+                    <li>5x cheddar</li>
+                    <li>Extra mycket Shackes tryffelmajjjo</li>
+                    <li>Massvis med bacon</li>
+                    <li>100% laktosfri</li>
+                    <li>Inga konstigheter, bara äkta SMASH!</li>
+                </ul>
+        </div>
+        <div style="display: inline-block">
+                <h3>Shacke Original 200g</h3>
+                <img src="https://www-static.hotsmashburger.se/wp-content/uploads/2023/08/3435773794.png" alt="Big Smash 750g" style="width: 200px">
+                <ul>
+                    <li>2x100g extraSMASHAT kött</li>
+                    <li>2x cheddar</li>
+                    <li>Jalapeñomajjo med extra STING</li>
+                    <li>Bacon</li>
+                    <li>100% laktosfri</li>
+                    <li>Inga konstigheter, bara äkta SMASH!</li>
+                </ul>
+        </div>
+        <div style="display: inline-block">
+                <h3>Chicken Shacke</h3>
+                <img src="https://theeburgerdude.com/wp-content/uploads/2023/08/Tofu-Fried-Chicken-1-1024x1024.jpg" alt="Big Smash 750g" style="width: 200px">
+                <ul>
+                    <li>Extra krispig kyckling</li>
+                    <li>Massa örter</li>
+                    <li>Lite karamellig i smaken</li>
+                    <li>Ej SMASHAD</li>
+                    <li>100% laktosfri</li>
+                    <li>Inga konstigheter, bara äkta SMASH!</li>
+                </ul>
+        </div>
+        <section id="leverans">
+            <h2>Leveransinformation</h2> <!-- Leveransrubrik -->
+            <p>
+                <label for="namn">Namn</label><br>
+                <input type="text" id="namn" name="namn" required="required" placeholder="För- och efternamn">
+            </p>
+            <p>
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" required=""required" placeholder="E-mailadress">
+            </p>
+            <p>
+                <label for="adress">Gatunamn</label><br>
+                <input type="text" id="adress" name="gatunamn" required="required" placeholder="Gatunamn">
+            </p>
+            <p>
+                <label for="husnummer">Husnummer</label><br>
+                <!-- inputmode numeric gör att endast siffror visas på mobiltelefon -->
+                 <!-- oninput gör att endast siffror kan skrivas in -->
+                <input type="text" inputmode="numeric" pattern="[0-9]+" id="husnummer" name="husnummer" required="required" placeholder="Husnummer" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+            </p>
+        </section>
+        <section id="betalmetoder">
+            <h2> Betalningsalternativ </h2>
+            <p>
+                <label for="betlningsmetod">Betalningsalternativ</label><br>
+                <select id="betalningsmetod" name="betalningsmetod">
+                    <option selected="selected">Kort</option>
+                    <option>Swish</option>
+                    <option>Apple Pay</option>
+                    <option>Betala på plats</option>
+                </select>
+            </p>
+        </section>
+        <section id="kön">
+            <h2>Kundinformation</h2>
+            <fieldset>
+                <legend>Välj det alternativ som passar bäst in på dig</legend>
+                <div>
+                    <input type="radio" id="man" name="kön" value="man" checked />
+                    <label for="man">Man</label>
+                </div>
+                <div>
+                    <input type="radio" id="kvinna" name="kön" value="kvinna">
+                    <label for="kvinna">Kvinna</label>
+                </div>
+                <div>
+                    <input type="radio" id="annat" name="kön" value="annat">
+                    <label for="annat">Annat/Vill inte ange</label>
+                </div>
+            </fieldset>
+        </section>
+        <section id="beställningsknapp">
+            <button typ="submit">
+                <img src="https://gallery.yopriceville.com/downloadfullsize/send/28045" style="width: 20px">
+                Beställ smash!
+            </button>
+        </section>
+        <section id="öppettider">
+            <h2>Öppettider</h2>
+             <p>Om du tror att det är stängt: INTE IDAG. Vi är alltid öppna!</p>
+        </section>
+        <hr>
+        <footer>
+            <p>&copy; SuperBRA</p>
+        </footer>
+   </body>
+</html>
