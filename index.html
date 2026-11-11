@@ -8,47 +8,49 @@
         <meta charset="utf-8"/>
    </header>
    <body>
-        <section id="meny" style="border: 10px dashed #085aa5; padding: 50px;">
+        <section id="meny" style="border: 10px dashed #015d47; padding: 50px;">
             <h2>Vår smashiga meny! Shacke approved</h2> <!-- Meny -->
             <p>Välkommen att testa vår bästsäljare: TurboSmash! som vunnit alla priser på internationella SMASHburgar-tävlingar.</p>
-            <div style="display: inline-block; height: 403px">
-                    <h3>Big Smash 750g</h3>
-                    <img src="https://png.pngtree.com/png-vector/20250512/ourmid/pngtree-juicy-double-cheeseburger-with-melted-cheese-and-splashing-sauce-png-image_16228821.png" alt="Big Smash 750g" style="width: 200px">
-                    <ul>
-                        <li>750g extraSMASHAT kött</li>
-                        <li>5x cheddar</li>
-                        <li>Extra mycket Shackes tryffelmajjjo</li>
-                        <li>Massvis med bacon</li>
-                        <li>100% <span class="laktosfri">laktosfri</span></li>
-                        <li>Inga konstigheter, bara äkta SMASH!</li>
-                    </ul>
-            </div>
-            <div style="display: inline-block; height: 403px; vertical-align: top">
-                    <h3>Shacke Original 200g</h3>
-                    <img src="https://www-static.hotsmashburger.se/wp-content/uploads/2023/08/3435773794.png" alt="Big Smash 750g" style="width: 200px">
-                    <ul>
-                        <li>2x100g extraSMASHAT kött</li>
-                        <li>2x cheddar</li>
-                        <li>Jalapeñomajjo med extra STING</li>
-                        <li>Bacon</li>
-                        <li>100% <span class="laktosfri">laktosfri</span></li>
-                        <li>Inga konstigheter, bara äkta SMASH!</li>
-                    </ul>
-            </div>
-            <div style="display: inline-block; height: 403px">
-                    <h3>Chicken Shacke</h3>
-                    <img src="https://png.pngtree.com/png-vector/20250217/ourmid/pngtree-fresh-chicken-burger-and-crispy-with-french-fries-tomato-png-image_15505145.png" alt="Big Smash 750g" style="width: 200px">
-                    <ul>
-                        <li>Extra krispig kyckling</li>
-                        <li>Massa örter</li>
-                        <li>Lite karamellig i smaken</li>
-                        <li>Ej SMASHAD</li>
-                        <li>100% <span class="laktosfri">laktosfri</span></li>
-                        <li>Inga konstigheter, bara äkta SMASH!</li>
-                    </ul>
+            <div class="wrapper">
+                <div class="burger bigsmash">
+                        <h3>Big Smash 750g</h3>
+                        <img src="https://png.pngtree.com/png-vector/20250512/ourmid/pngtree-juicy-double-cheeseburger-with-melted-cheese-and-splashing-sauce-png-image_16228821.png" alt="Big Smash 750g">
+                        <ul>
+                            <li>750g extraSMASHAT kött</li>
+                            <li>5x cheddar</li>
+                            <li>Extra mycket Shackes tryffelmajjjo</li>
+                            <li>Massvis med bacon</li>
+                            <li>100% <span class="laktosfri">laktosfri</span></li>
+                            <li>Inga konstigheter, bara äkta SMASH!</li>
+                        </ul>
+                </div>
+                <div class="burger shackeoriginal">
+                        <h3>Shacke Original 200g</h3>
+                        <img src="https://www-static.hotsmashburger.se/wp-content/uploads/2023/08/3435773794.png" alt="Big Smash 750g">
+                        <ul>
+                            <li>2x100g extraSMASHAT kött</li>
+                            <li>2x cheddar</li>
+                            <li>Jalapeñomajjo med extra STING</li>
+                            <li>Bacon</li>
+                            <li>100% <span class="laktosfri">laktosfri</span></li>
+                            <li>Inga konstigheter, bara äkta SMASH!</li>
+                        </ul>
+                </div>
+                <div class="burger chickenshacke">
+                        <h3>Chicken Shacke</h3>
+                        <img src="https://png.pngtree.com/png-vector/20250217/ourmid/pngtree-fresh-chicken-burger-and-crispy-with-french-fries-tomato-png-image_15505145.png" alt="Big Smash 750g">
+                        <ul>
+                            <li>Extra krispig kyckling</li>
+                            <li>Massa örter</li>
+                            <li>Lite karamellig i smaken</li>
+                            <li>Ej SMASHAD</li>
+                            <li>100% <span class="laktosfri">laktosfri</span></li>
+                            <li>Inga konstigheter, bara äkta SMASH!</li>
+                        </ul>
+                </div>
             </div>
         </section>
-        <section id="leverans" style="border: 10px dashed #085aa5; padding: 50px; border-top: 0px;">
+        <section id="leverans" style="border: 10px dashed #015d47; padding: 50px; border-top: 0px;">
             <h2>Leveransinformation</h2> <!-- Leveransrubrik -->
             <p>
                 <label for="namn">Namn</label><br>
@@ -69,7 +71,7 @@
                 <input type="text" inputmode="numeric" pattern="[0-9]+" id="husnummer" name="husnummer" required="required" placeholder="Husnummer" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
             </p>
         </section>
-        <section id="betalmetoder" style="border: 10px dashed #085aa5; padding: 50px; border-top: 0px;">
+        <section id="betalmetoder" style="border: 10px dashed #015d47; padding: 50px; border-top: 0px;">
             <h2> Betalningsalternativ </h2>
             <p>
                 <label for="betlningsmetod">Betalningsalternativ</label><br>
